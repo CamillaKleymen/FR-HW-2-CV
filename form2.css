@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url(./vivid-blurred-colorful-wallpaper-background_58702-3819.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.formWrapper{
+    width: 80%;
+    background-color: rgb(201, 241, 255); 
+    margin: 100px auto 0;   
+    padding: 72px 0;
+    border-radius: 24px;
+}
+.formWrapper p{
+    font-size: 166px;
+    line-height: 222px;
+    text-align: center;
+    color:#5e5e5e59;
+    margin-bottom: 12px;
+}
+.blue{
+    color: #336BF6;
+}
+.formWrapper h3{
+font-size: 44PX;
+COLOR: #336BF6;
+text-align: center;
+margin-bottom: 32px;
+}
+.registerForm{
+    width: 358px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+.registerForm label{
+    display: block;
+    font-size: 16px;
+    color:blue;
+    margin-bottom: 16px;
+}
+.registerForm input{
+    display: block;
+    width: 500px;
+    margin-top: 20px;
+    padding: 14px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F9F9FC;
+    outline: none   
+}
+.registerForm input [type="SUBMIT"]{
+    background-color: #336BF6;
+    color: white;
+}
