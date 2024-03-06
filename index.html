@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .accordion-button {
+            background-color: rgb(180, 252, 255);
+            color: #17007d;
+            cursor: pointer;
+            padding: 10px 20px;
+            width: 500px;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+        .accordion-button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .accordion-collapse {
+            display: none;
+            padding: 10px;
+        }
+        .accordion-item.active .accordion-collapse {
+            display: block;
+        }
+    </style>
+    <title>CV</title>
+</head>
+<body>
+    <h1><p style="text-align: center">CV</p></h1>
+    <h1><p style="text-align: center">Camilla Kleymen</p></h1>
+    <p><img src="./IMG_4262.jpg" width="200" height="200" alt="mycvphoto" align="right" vspace="10" hspace="250">
+    </p>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <button class="accordion-button" type="button" onclick="toggleAccordion(this)">
+                PROFILE
+            </button>
+            <div class="accordion-collapse">
+                <strong></strong> 
+                <ul>
+                <li>AGE: 20 y.o</li>
+                <li>NUMBER: +1 703 203 20 24</li>
+                <li><a href="https://t.me/camilla_kl" target ="_blank">TELEGRAM</a></li>
+                <li>EMAIL:camillakleymen@outlook.com </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" type="button" onclick="toggleAccordion(this)">
+                MAIN QUALITIES
+            </button>
+            <div class="accordion-collapse">
+                <strong></strong> 
+                <ul>
+                <li>active and dynamic approach, creative problem-solver,</li>
+                <li>critical thinker, excellent interpersonal skills</li>
+                <li>financially smart, good team player, also positive attitude.</li>
+                </ul>              
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" type="button" onclick="toggleAccordion(this)">
+                EDUCATION
+            </button>
+            <div class="accordion-collapse">
+                <strong></strong> 
+               <li> University of Geological Sciences, Tashkent</li>
+               <li>BA in Economics, degree expected in 2026</li>
+               <li>Certificate of secondary education, Tashkent.</li>
+               <li>Secondary school #161</li>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" type="button" onclick="toggleAccordion(this)">
+                WORK EXPERIENCE
+            </button>
+            <div class="accordion-collapse">
+                <strong></strong> Call-operator, sales-manager, Bitrix24
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" type="button" onclick="toggleAccordion(this)">
+                SKILLS
+            </button>
+            <div class="accordion-collapse">
+                <strong>Language skills:</strong>
+              <ul>
+                <li>Native: Russian</li>
+                <li>Uzbek: Competent User. Level: B2</li>
+                <li>English: Competent User. Level: B2</li>
+                <strong>Computer literacy:</strong>
+                <li>MS Office (Word, Excel, Outlook, PowerPoint, OneNote, Access)</li>
+              </ul>  
+            </div>
+        </div>
+    </div>
+    <a href="./form2.html">If you're an employer, you can create your own form on our website</a>
+    <script>
+        function toggleAccordion(button) {
+            var item = button.closest('.accordion-item');
+            item.classList.toggle('active');
+            var collapse = item.querySelector('.accordion-collapse');
+            collapse.style.display = collapse.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
